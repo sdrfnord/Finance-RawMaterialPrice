@@ -7,7 +7,7 @@ use utf8;
 use Carp qw( croak );
 use LWP::Simple qw(get);
 
-our $VERSION     = '0.01';
+our $VERSION     = '0.02';
 our @EXPORT      = qw(get_gold_price get_silver_price);
 our @EXPORT_OK   = qw(get_raw_material_price);
 our %EXPORT_TAGS = ( all => [ @EXPORT, @EXPORT_OK ] );
@@ -44,8 +44,7 @@ __END__
 
 =head1 NAME
 
-Finance::RawMaterialPrice - Perl extension for getting the current gold and
-silver fixings (prices)
+Finance::RawMaterialPrice - To get the current gold and silver price
 
 =head1 SYNOPSIS
 

@@ -1,8 +1,7 @@
 Finance::RawMaterialPrice version 0.01
 =============================
 
-Finance::RawMaterialPrice - Perl extension for getting the current gold and
-silver fixings (prices)
+Finance::RawMaterialPrice - To get the current gold and silver price
 
 INSTALLATION
 
