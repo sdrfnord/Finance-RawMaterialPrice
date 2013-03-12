@@ -12,7 +12,7 @@ BEGIN { use_ok('Finance::RawMaterialPrice') }
 
 # Insert your test code below, the Test::More module is use()ed here so read
 # its man page ( perldoc Test::More ) for help writing this test script.
-my $gold_EUR_per_gram   = get_gold_price();
+my $gold_EUR_per_gram   = get_gold_price('dollar');
 my $silver_EUR_per_gram = get_silver_price();
 
 ok(

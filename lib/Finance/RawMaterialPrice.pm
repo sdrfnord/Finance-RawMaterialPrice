@@ -26,7 +26,7 @@ sub get_raw_material_price {
 
 sub get_gold_price {
     my $unit = shift || 'euro';
-    unless ($unit eq 'euro' or $unit eq 'dollar') {
+    unless ( $unit eq 'euro' or $unit eq 'dollar' ) {
         croak "Either use 'euro' or 'dollar'";
     }
     return get_raw_material_price("$base_url/goldpreis/$unit");
@@ -34,7 +34,7 @@ sub get_gold_price {
 
 sub get_silver_price {
     my $unit = shift || 'euro';
-    unless ($unit eq 'euro' or $unit eq 'dollar') {
+    unless ( $unit eq 'euro' or $unit eq 'dollar' ) {
         croak "Either use 'euro' or 'dollar'";
     }
     return get_raw_material_price("$base_url/silberpreis/$unit");
@@ -44,21 +44,21 @@ __END__
 
 =head1 NAME
 
-RawMaterialPrice - Perl extension for getting the current gold and silver
-fixings (prices)
+Finance::RawMaterialPrice - Perl extension for getting the current gold and
+silver fixings (prices)
 
 =head1 SYNOPSIS
 
-  use RawMaterialPrice;
+  use Finance::RawMaterialPrice;
   my $gold_EUR_per_gram   = get_gold_price('dollar');
   my $silver_EUR_per_gram = get_silver_price('euro');
 
 =head1 DESCRIPTION
 
-This module provides the function get_gold_price to get the current price in
-Euro for one gram gold. It also provides the function get_silver_price to do
-the equivalent for the silver price. It parses http://www.finanzen.net to get
-this prices.
+This module provides the function get_gold_price to get the current price for
+one gram gold. It also provides the function get_silver_price to do the
+equivalent for the silver price. It parses http://www.finanzen.net to get this
+prices.
 
 For each function call you can specify the money unit you would like to get. I
 only implemented 'dollar' or 'euro'. If you omit this parameter then the price
@@ -79,7 +79,7 @@ sdrfnord <sdrfnord@gmx.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2012 by sdrfnord
+Copyright (C) 2012-2013 by sdrfnord
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.10.1 or,
