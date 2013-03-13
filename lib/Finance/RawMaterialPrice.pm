@@ -74,11 +74,11 @@ LBMA::Statistics
 
 =head1 AUTHOR
 
-sdrfnord <sdrfnord@gmx.de>
+Marcel `sdrfnord` McKinnon <sdrfnord@gmx.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2012-2013 by sdrfnord
+Copyright (C) 2012-2013 by Marcel `sdrfnord` McKinnon
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.10.1 or,

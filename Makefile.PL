@@ -12,7 +12,7 @@ WriteMakefile(
         ?                                              ## Add these new keywords supported since 5.005
           (
             ABSTRACT_FROM => 'lib/Finance/RawMaterialPrice.pm', # retrieve abstract from module
-            AUTHOR        => 'sdrfnord <sdrfnord@gmx.de>'
+            AUTHOR        => 'Marcel `sdrfnord` McKinnon <sdrfnord@gmx.de>'
           )
         : ()
     ),
